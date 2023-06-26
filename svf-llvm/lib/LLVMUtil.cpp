@@ -31,6 +31,7 @@
 #include "SVFIR/SymbolTableInfo.h"
 #include <sstream>
 #include <llvm/Support/raw_ostream.h>
+#include <llvm/IR/DebugInfo.h>
 
 using namespace SVF;
 

@@ -221,8 +221,8 @@ std::string AccessPath::dump() const
     rawstr << "AccessPath\tField_Index: " << getConstantFieldIdx();
     rawstr << ",\tNum-Stride: {";
     const OffsetVarAndGepTypePairs& vec = getOffsetVarAndGepTypePairVec();
-    OffsetVarAndGepTypePairs::const_iterator it = vec.begin();
-    OffsetVarAndGepTypePairs::const_iterator eit = vec.end();
+    auto it = vec.begin();
+    auto eit = vec.end();
     for (; it != eit; ++it)
     {
         const SVFType* ty = it->second;
